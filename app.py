@@ -114,8 +114,8 @@ formatted_agent_chain = (
 
 # --- 3. FastAPI App ---
 ##Need To Code
-app=FASTAPI("Indian weather and cinema agent")
-add_routes(app,formatted_agent_chain,path="/agenet",playground_type="default")
+app=FastAPI("Indian weather and cinema agent")
+add_routes(app,formatted_agent_chain,path="/agent",playground_type="default")
 
 if __name__ == "__main__":
     port = int(os.environ.get("PORT", 8000))
